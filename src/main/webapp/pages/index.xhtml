@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>Hello Page</title>
+</h:head>
+<h:body>
+	<h1>Hello</h1>
+	<h:form>
+		<ui:inputText id="id" value="#{personMBean.person.id}"/>
+		<br/>
+		<ui:inputText id="name" value="#{personMBean.person.name}"/>
+		<br/>
+		<ui:inputText id="age" value="#{personMBean.person.age}"/>
+		<br/>
+		<h:commandButton value="Submit" action="success"/>
+		<br/>
+	</h:form>
+</h:body>
+</html>
